@@ -44,7 +44,7 @@ def encode_prompt(prompt_instructions):
 def post_process_gpt3_response(num_prompt_instructions, response):
     if response is None:
         return []
-    raw_instructions = f"{num_prompt_instructions+1}. Instruction:" + response["text"]
+    raw_instructions = f"{num_prompt_instructions+1}. Instruction:" + response["message"]["content"]
     raw_instructions = re.split("###", raw_instructions)
     instructions = []
     for idx, inst in enumerate(raw_instructions):
@@ -164,7 +164,7 @@ def generate_instruction_following_data(
             stop=["\n20", "20.", "20."],
         )
         request_start = time.time()
-        results = utils.openai_completion(
+        results = utils.openai_chatcompletion(
             prompts=batch_inputs,
             model_name=model_name,
             batch_size=request_batch_size,
