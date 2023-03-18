@@ -130,7 +130,7 @@ def openai_completion(
     return completions
 
 def openai_chatcompletion(
-    prompts: Union[str, Sequence[str], Sequence[dict[str, str]], dict[str, str]],
+    message: any,
     decoding_args: OpenAIDecodingArguments,
     model_name="gpt-3.5-turbo",
     sleep_time=2,

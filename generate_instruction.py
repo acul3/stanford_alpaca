@@ -155,7 +155,8 @@ def generate_instruction_following_data(
             # only sampling from the seed tasks
             prompt_instructions = random.sample(seed_instruction_data, num_prompt_instructions)
             prompt = encode_prompt(prompt_instructions)
-            batch_inputs.append(prompt)
+            prompt_template =[{"role": "system", "content": "You are helpful asisstant that can only answer or response in indonesia language"},{"role": "user", "content": prompt},]
+            batch_inputs.append(prompt_template)
         decoding_args = utils.OpenAIDecodingArguments(
             temperature=temperature,
             n=1,
@@ -165,7 +166,7 @@ def generate_instruction_following_data(
         )
         request_start = time.time()
         results = utils.openai_chatcompletion(
-            prompts=batch_inputs,
+            message=batch_inputs,
             model_name=model_name,
             batch_size=request_batch_size,
             decoding_args=decoding_args,

@@ -1,14 +1,16 @@
-You are asked to come up with a set of 20 diverse task instructions. These task instructions will be given to a GPT model and we will evaluate the GPT model for completing the instructions.
+Kamu diminta untuk membuat 20 kumpulan instruction tasks yang beragam dari bahasa inggris ke dalam bahasa Indonesia. instruction task ini akan diberikan ke model GPT dan kami akan mengevaluasi model GPT untuk menyelesaikan instruction.
 
-Here are the requirements:
-1. Try not to repeat the verb for each instruction to maximize diversity.
-2. The language used for the instruction also should be diverse. For example, you should combine questions with imperative instrucitons.
-3. The type of instructions should be diverse. The list should include diverse types of tasks like open-ended generation, classification, editing, etc.
-2. A GPT language model should be able to complete the instruction. For example, do not ask the assistant to create any visual or audio output. For another example, do not ask the assistant to wake you up at 5pm or set a reminder because it cannot perform any action.
-3. The instructions should be in English.
-4. The instructions should be 1 to 2 sentences long. Either an imperative sentence or a question is permitted.
-5. You should generate an appropriate input to the instruction. The input field should contain a specific example provided for the instruction. It should involve realistic data and should not contain simple placeholders. The input should provide substantial content to make the instruction challenging but should ideally not exceed 100 words.
-6. Not all instructions require input. For example, when a instruction asks about some general information, "what is the highest peak in the world", it is not necssary to provide a specific context. In this case, we simply put "<noinput>" in the input field.
-7. The output should be an appropriate response to the instruction and the input. Make sure the output is less than 100 words.
+Berikut persyaratannya:
+1. kamu hanya bisa menjawab dengan bahasa indonesia.
+2. instruction dan input harus dalam bahasa Indonesia saja.
+3. Output juga harus dalam bahasa Indonesia saja.
+4. Cobalah untuk tidak mengulang kata kerja untuk setiap instruction untuk memaksimalkan keragaman.
+5. Bahasa yang digunakan untuk instruction juga harus beragam. Misalnya, Anda harus menggabungkan pertanyaan dengan instruction imperatif.
+6. Jenis instruction harus beragam. Daftar tersebut harus mencakup beragam jenis tasks seperti pembuatan tanpa akhir, klasifikasi, pengeditan, dll.
+7. Model bahasa GPT harus dapat menyelesaikan instruction. Misalnya, jangan meminta asisten untuk membuat keluaran visual atau audio apa pun. Contoh lainnya, jangan meminta asisten untuk membangunkan Anda pada jam 5 sore atau menyetel pengingat karena tidak dapat melakukan tindakan apa pun.
+8. Panjang instruksi harus 1 sampai 2 kalimat. Baik kalimat imperatif atau pertanyaan diperbolehkan.
+9. Anda harus menghasilkan input yang sesuai dengan instruction. Kolom input harus berisi contoh spesifik yang disediakan untuk instruction. Itu harus melibatkan data yang realistis dan tidak boleh berisi placeholder sederhana. Masukan harus menyediakan konten yang substansial untuk membuat instruksi menantang tetapi idealnya tidak melebihi 100 kata.
+10. Tidak semua instruction membutuhkan input. Misalnya, ketika sebuah instruction bertanya tentang beberapa informasi umum, "apa puncak tertinggi di dunia", tidak perlu memberikan konteks khusus. Dalam hal ini, kami cukup memasukkan "<noinput>" di kolom input.
+11. Output harus merupakan tanggapan yang tepat terhadap instruction dan input. Pastikan hasilnya kurang dari 100 kata.
 
-List of 20 tasks:
+Daftar 20 task:
